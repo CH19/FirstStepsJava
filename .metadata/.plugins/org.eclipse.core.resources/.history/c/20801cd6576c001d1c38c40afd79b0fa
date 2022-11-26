@@ -1,0 +1,43 @@
+package Poo;
+
+public class EjemploAndres {
+
+	public static void main(String[] args) {
+		
+		String variableEjemplo;
+		int variable2;
+		
+		System.out.println("imagina que esto es codigo");
+		
+		objeto a = new objeto();
+		
+		
+	}
+}
+
+class objeto{
+	
+	public String atributo1;
+	public int atributo2;
+	
+	objeto(){//este es el metodo constructor
+		
+	}
+
+	public String getAtributo1() {//ejemplo getter
+		return atributo1;
+	}
+
+	public void setAtributo1(String atributo1) {//ejemplosetter
+		this.atributo1 = atributo1;
+	}
+
+	public int getAtributo2() {
+		return atributo2;
+	}
+
+	public void setAtributo2(int atributo2) {
+		this.atributo2 = atributo2;
+	}
+
+}

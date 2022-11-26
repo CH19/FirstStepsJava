@@ -1,0 +1,16 @@
+
+public class Arrays003Bidimensionales {
+
+	public static void main(String[] args) {
+		
+		int array = {
+				{12,23,34,45,56,67},
+				{12,234,56,32,74},
+		{12,34,45,56,67,23}
+					};
+		
+		
+		
+	}
+
+}

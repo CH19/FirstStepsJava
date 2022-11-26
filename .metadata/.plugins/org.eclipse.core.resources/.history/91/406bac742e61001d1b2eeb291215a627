@@ -1,0 +1,25 @@
+package Poo;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class PruebaConstantes {
+
+public static void main(String[] args) {
+	Humano human = new Humano("christian");
+	Humano human2 = new Humano("Fabian");
+human.CambiarSangre();
+human.DevolverTipoSangre();
+human.IdEmpleaod();
+System.out.println(human.aaaa() + "\n" + human.MostrarId());
+human2.CambiarSangre();
+human2.DevolverTipoSangre();
+human2.IdEmpleaod();
+System.out.println(human2.aaaa() + "\n" + human2.MostrarId());
+  }
+
+}
+
+	
+	
+	

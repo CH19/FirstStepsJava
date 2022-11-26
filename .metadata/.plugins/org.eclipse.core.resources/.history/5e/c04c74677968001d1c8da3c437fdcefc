@@ -1,0 +1,14 @@
+package EjerciciosLogica;
+
+import javax.swing.JOptionPane;
+
+public class prueba {
+
+public static void main(String[] args) {
+	
+	int i = 4; String c = JOptionPane.showInputDialog("introduce algo")
+			; System.out.println((i >= 6) + "el numero es " + c);
+			
+}
+
+}

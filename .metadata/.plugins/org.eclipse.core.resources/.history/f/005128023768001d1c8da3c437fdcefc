@@ -1,0 +1,10 @@
+package EjerciciosLogica;
+
+public class prueba {
+
+public static void main(String[] args) {
+	
+	int i = 4; char c = 'w'; System.out.println((i >= 6) && (c == 'w'));
+}
+
+}
