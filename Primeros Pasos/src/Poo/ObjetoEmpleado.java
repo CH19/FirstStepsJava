@@ -84,9 +84,20 @@ public class ObjetoEmpleado {
 
 }
 
+abstract class Persona{
+	protected String name;
+	public Persona(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public abstract String getDescription();
+}
 
-
-class jefe extends ObjetoEmpleado{
+class jefe extends ObjetoEmpleado implements Jefes{
 	private double Incentivo4 = 0;
 	public double SueldoMaster = 0;
 	public jefe(String nombre, double Sueldo, int day, int month, int year) {
@@ -105,4 +116,71 @@ class jefe extends ObjetoEmpleado{
 		 SueldoMaster = sueldojefe + SueldoMaster + Incentivo4;
 		 return SueldoMaster;
 	}
+	
+	public String TomarDecisiones(String decision) {
+		return "la decision tomada por el jefe es= " + decision; //este es un metodo obligatoria tomado de la interfaz Jefes para la clase Jefes
+	}
+}
+
+class Director extends jefe {
+	//Clase heredada de jefe
+	public Director(String nom) {
+		super(nom);
+	}
+	//Metodos constructores del Director
+	public Director(String nombre, double Sueldo, int day, int month, int year) {
+		super( nombre,  Sueldo,  day,month, year);
+	}
+}
+
+class Empleado2 extends Persona{
+	private String NombreEmpleado;
+	private double Sueldo;
+	//atributos del objeto privados respetando el encapsulamiento
+	private double SubirSueldo;
+	private int year = 0;
+	private int month = 0;
+	private int day = 0;
+	private double Porcentaje;
+	private int AumentarSueldoEn;
+	//constructor de objeto 1
+	
+
+	//objeto hecho para probar las clases abstractas
+	public Empleado2(String nombre, double Sueldo, int day, int month, int year) {
+		super(nombre);//el super porque estoy importando el constructor para obtenr el nombre de la clase Persona
+		this.Sueldo = Sueldo;
+		this.year = year;
+		this.month = month;
+		this.day = day;
+	}
+	//Constructor de objeto 2
+	public Empleado2(String nombre) {
+		
+
+		super(nombre);//el super porque estoy importando el constructor para obtenr el nombre de la clase Persona
+	
+	}
+	
+	public String getDescription() {
+		return "el sueldo del empleado es= " + Sueldo + "el nombre del empleado= " + this.name;
+	}
+	
+}
+
+class alumno extends Persona{
+	
+	private int edad;
+	private int gradoNum;
+	public alumno(String name, int edad, int gradoNum) {
+		super(name);
+		this.edad = edad;
+		this.gradoNum = gradoNum;
+	}
+	
+	public String getDescription() {
+		return "el alumno" + name + "tiene " + edad + " Años y esta en " + gradoNum + " grado";  
+	}
+	
+	
 }

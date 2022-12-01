@@ -40,6 +40,7 @@ public class UsoEmpleado {
 		
 		
 		
+		
 		for (ObjetoEmpleado objetoEmpleado : MisEmpleados) {
 			objetoEmpleado.setAumentarSueldoEn(1200);
 		}
@@ -50,6 +51,7 @@ public class UsoEmpleado {
 			System.out.println((i+1) + "  " + MisEmpleados[i].MostrarDatosEmpleado() + "\n");
 		}
 		System.out.println("el jefe tiene un sueldo de " + Master.getSueldo());
+		System.out.println(Gerente.TomarDecisiones("Estas Despedido juan Guarnizo"));//probando el metodo de la interfaz con la clase Jefe
 		
 		
 	}
