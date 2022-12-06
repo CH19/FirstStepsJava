@@ -38,7 +38,7 @@ public class UsoEmpleado {
 		
 		jefe Gerente = (jefe) MisEmpleados[6];
 		
-		
+		MisEmpleados[4].EstableceBonus(1500);
 		
 		
 		for (ObjetoEmpleado objetoEmpleado : MisEmpleados) {
@@ -47,12 +47,13 @@ public class UsoEmpleado {
 		
 		Gerente.setAumentarSueldoEn(1500);;
 		
-		for (int i = 0; i < MisEmpleados.length; i++) {
+	/*	for (int i = 0; i < MisEmpleados.length; i++) {
 			System.out.println((i+1) + "  " + MisEmpleados[i].MostrarDatosEmpleado() + "\n");
-		}
+		}*/
 		System.out.println("el jefe tiene un sueldo de " + Master.getSueldo());
 		System.out.println(Gerente.TomarDecisiones("Estas Despedido juan Guarnizo"));//probando el metodo de la interfaz con la clase Jefe
 		
-		
+		//System.out.println("el empleado 4 tiene un sueldo de: " + (MisEmpleados[4].EstableceBonus(1550) + MisEmpleados[4].getSueldo()) + "$");
+		System.out.println("el empleado " + MisEmpleados[4].ObtenerNombreEmpleado("Enrique") + "tiene un bonus de " + MisEmpleados[4].EstableceBonus(1500) + "$");
 	}
 }

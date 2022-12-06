@@ -3,7 +3,7 @@ import java.util.*;
 
 
 import javax.swing.JOptionPane;
-public class ObjetoEmpleado {
+public class ObjetoEmpleado implements Trabajadores {
 
 	private String NombreEmpleado;
 	private double Sueldo;
@@ -81,6 +81,10 @@ public class ObjetoEmpleado {
 	public double getSueldo() {
 		return this.Sueldo;
 	}
+	public double EstableceBonus(double BonusSueldo) {
+		
+		return BonusSueldo+BonusMinimo;
+	}
 
 }
 
@@ -119,6 +123,10 @@ class jefe extends ObjetoEmpleado implements Jefes{
 	
 	public String TomarDecisiones(String decision) {
 		return "la decision tomada por el jefe es= " + decision; //este es un metodo obligatoria tomado de la interfaz Jefes para la clase Jefes
+	}
+	public double EstableceBonus(double BonusSueldo) {
+		double prima = 500.0;
+		return BonusSueldo + prima;
 	}
 }
 

@@ -7,7 +7,7 @@ public class Arrays3Bidimensionales {
 		
 		int numbers [][] = new int [4] [5] ;
 		//lectura e impersion de arreglos de segunda dimension
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < numbers.length; i++) {
 			for (int j = 0; j < 5; j++) {
 				
 				numbers[i][j] = Integer.parseInt(JOptionPane.showInputDialog("introduce the number "));

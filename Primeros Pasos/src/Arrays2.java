@@ -27,12 +27,12 @@ public class Arrays2 {
 		
 		for (int i = 0; i < randomNumber.length; i++) {
 			
-			randomNumber[i] = (int)Math.round(Math.random()*100);
+			randomNumber[i] = (int)Math.round(Math.random()*100);//crea un numero random en java
 		}
 		int a = 0;
 		
 		for(int route: randomNumber) {
-			System.out.println((a++ + 1) +" The number is" + route + ",  ");
+			System.out.println((a++ ) +" The number is" + route + ",  ");
 		}
 	
 	}
