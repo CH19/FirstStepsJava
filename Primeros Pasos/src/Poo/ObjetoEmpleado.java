@@ -83,7 +83,7 @@ public class ObjetoEmpleado implements Trabajadores {
 	}
 	public double EstableceBonus(double BonusSueldo) {
 		
-		return BonusSueldo+BonusMinimo;
+		return BonusSueldo + BonusMinimo;
 	}
 
 }
